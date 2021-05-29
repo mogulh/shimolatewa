@@ -1,0 +1,10 @@
+body {
+    font-family: 'Stint Ultra Condensed', cursive;
+}
+
+#mainNav {
+    display: inline;
+    flex-direction: row;
+    background-color: yellow;
+    color: blue;
+}
