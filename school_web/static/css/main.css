@@ -1,10 +1,39 @@
 body {
-    font-family: 'Stint Ultra Condensed', cursive;
+    background-color: #e0e0e0;
 }
 
-#mainNav {
-    display: inline;
-    flex-direction: row;
-    background-color: yellow;
-    color: blue;
+.container-fluid {
+    padding: 0px 5px 0px 5px;
 }
+
+.carousel-item {
+    max-height: 400px;
+}
+
+.container {
+    width: 90% !important;
+}
+
+.img-side {
+    height: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100% !important;
+    }
+}
+
+.tabs .indicator {
+    background-color: #ffc400 !important;
+}
+
+.tabs .tab a:hover,
+.tabs .tab a.active {
+    background-color: #0000008e !important;
+}
+
+
+/* nav a {
+    color: #ffc400 !important;
+} */
