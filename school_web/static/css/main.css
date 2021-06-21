@@ -1,39 +1,113 @@
-body {
-    background-color: #e0e0e0;
-}
-
-.container-fluid {
-    padding: 0px 5px 0px 5px;
-}
-
-.carousel-item {
-    max-height: 400px;
-}
-
-.container {
-    width: 90% !important;
-}
-
-.img-side {
-    height: 0.5rem;
-}
-
-@media only screen and (max-width: 600px) {
-    .container {
-        width: 100% !important;
+    body {
+        background-color: #e0e0e0;
     }
-}
-
-.tabs .indicator {
-    background-color: #ffc400 !important;
-}
-
-.tabs .tab a:hover,
-.tabs .tab a.active {
-    background-color: #0000008e !important;
-}
-
-
-/* nav a {
+    
+    .container-fluid {
+        padding: 0px 5px 0px 5px;
+    }
+    
+    .carousel-item {
+        max-height: 400px;
+    }
+    
+    .container {
+        width: 90% !important;
+    }
+    
+    .img-side {
+        height: 0.5rem;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 100% !important;
+        }
+    }
+    
+    .tabs .indicator {
+        background-color: #ffc400 !important;
+    }
+    
+    .tabs .tab a:hover,
+    .tabs .tab a.active {
+        color: #ffc400 !important;
+    }
+    /* nav a {
     color: #ffc400 !important;
 } */
+    /* Vertica tabs */
+    
+    .tabs-vertical .tabs {
+        height: auto;
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        display: -webkit-flex;
+        display: flex;
+    }
+    
+    .tabs-vertical .tab {
+        width: 100%;
+    }
+    
+    .tabs-vertical .tab .active {
+        -moz-transition: border-color .5s ease;
+        -o-transition: border-color .5s ease;
+        -webkit-transition: border-color .5s ease;
+        transition: border-color .5s ease;
+        border-right: 3px solid #ffc400 !important;
+        background-color: ;
+    }
+    
+    .tabs-vertical .tab :hover {
+        border-right: 3px solid #ffc400 !important;
+        color: #ffc400 !important;
+    }
+    
+    .tabs-vertical .tab a {
+        color: black;
+    }
+    
+    .tabs-vertical .indicator {
+        display: none;
+    }
+    
+    .tabs-vertical .tab-content {
+        display: block;
+    }
+    
+    .side {
+        margin: 0px;
+        padding: 0px !important;
+    }
+    
+    #top {
+        margin-bottom: 0px;
+    }
+    
+    .prof {
+        width: 200px;
+        height: 200px;
+    }
+    
+    blockquote {
+        border-left: 2px solid #ffc4009d;
+        font-size: 20px;
+    }
+    
+    .person {
+        background-color: white;
+        border-radius: 5px;
+        border: 1px solid rgba(128, 128, 128, 0.616);
+        padding: 10px 0 10px;
+    }
+    
+    h4 {
+        margin-top: 5px;
+    }
+    
+    .my-rsp {
+        width: 100%;
+        height: auto;
+        display: cover;
+    }

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+   <ul class="tabs tabs-fixed-width  grey darken-1 z-depth-0 ">
+    <li class="tab m"><a id="t_sch" target="_self" class="white-text" href="{% url 'school' %}">SChool</a></li>
+    <li class="tab m"><a id="t_stf" target="_self" class="white-text" href="{% url 'staff' %}">Staff</a></li>
+    <li class="tab m"><a id="t_std" target="_self" href="{% url 'students' %}" class="white-text">Students</a></li>
+    <li class="tab m"><a id="t_cls"  target="_self" href="{% url 'classes' %}" class="white-text">Classes</a></li>
+    <li class="tab m"><a id="t_clb"  target="_self" href="{% url 'clubs' %}" class="white-text">Clubs</a></li>
+    <li class="tab m"><a id="t_gms" target="_self" href="{% url 'games' %}" class="white-text">Games</a></li>
+  </ul>
+
+{% block info%}
+{% endblock info%}
+
+{% endblock content%}

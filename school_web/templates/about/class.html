@@ -1,0 +1,180 @@
+{% extends 'about/about.html' %}
+{% load static %}
+
+{% block info %}
+
+<div class="section">
+    <div class="row tabs-vertical"  id="top" >
+        <div id="left_menu" class="col s12 m2 side">
+            <ul class='tabs'>
+                <li class='tab' id='tag_info_outline'>
+                <a href='#form1' class='active'> 
+                    Form 1
+                </a>
+            </li>
+                    
+            <li class='tab' id='tag_list'>
+                <a href='#form2' >  
+                  Form 2
+                
+                </a>
+            </li>
+            <li class='tab' id='tag_color'>
+                <a href='#form3' >
+                   FOrm 3
+                    
+                </a>
+            </li>
+
+             <li class='tab' id='tag_color'>
+                <a href='#form4' >
+                   FOrm 4
+                    
+                </a>
+            </li>
+
+
+        
+       
+                    
+        </ul> 
+    </div>
+
+
+
+<div id="right_content"  class="col s12 m10" style="height:100%;">    
+
+    <div id="form1" class="tab-content white center" >
+       
+      <ul class="collapsible">
+        <li class="active">
+            <div class="collapsible-header"><i class="material-icons">filter_drama</i>Power</div>
+            <div class="collapsible-body center grey darken-1">
+                 <!--Person card-->
+                <div class="row person">
+                    
+                        
+                    <div class="col m4" style=" border-right: 2px solid grey;">
+                            <img class="responsive-img circle center" src="{% static 'images/hall.jpg' %}" style="height:200px; width:200px;"/>
+                    </div>
+                    <div class="col m8 left-align">
+                        <h4>Class Teacher</h4>
+                        <div class="row ">
+                            <div class="col s4">
+                                Name:
+                            </div>
+                            <div class="col s8 left-align">
+                                Alex Mwagonya
+                            </div>
+                            <div class="col s4 ">
+                                Subject1:
+                            </div>
+                            <div class="col s8 left-align">
+                                Maths
+                            </div>
+                            <div class="col s4 ">
+                                Subject2:
+                            </div>
+                            <div class="col s8 left-align">
+                                English
+                            </div>
+
+                        </div>
+                        <blockquote class="left-align">
+                            This is my personal message to the students do not unserestimate what I am saying
+                        </blockquote>
+                    </div>
+            
+                </div>
+                  <!--EndPerson card-->
+                    <!--Person card-->
+                <div class="row person">
+                    
+                        
+                    <div class="col m4 push-m8 hide-on-small-only" style=" border-left: 2px solid grey;">
+                            <img class="responsive-img circle center" src="{% static 'images/hall.jpg' %}" style="height:200px; width:200px;"/>
+                    </div>
+                    <div class="col m8 pull-m4 left-align">
+                        <h4>Class Prefect</h4>
+                        <div class="row ">
+                            <div class="col s4">
+                                Name:
+                            </div>
+                            <div class="col s8 left-align">
+                                Alex Mwagonya
+                            </div>
+                            <div class="col s4 ">
+                                Subject1:
+                            </div>
+                            <div class="col s8 left-align">
+                                Maths
+                            </div>
+                            <div class="col s4 ">
+                                Subject2:
+                            </div>
+                            <div class="col s8 left-align">
+                                English
+                            </div>
+
+                        </div>
+                        <blockquote class="left-align">
+                            This is my personal message to the students do not unserestimate what I am saying
+                        </blockquote>
+                    </div>
+            
+                </div>
+                  <!--EndPerson card-->
+                  <div class="row person">
+                  <h4 class="left-align">Class Photo </h4>
+                  <img class="my-rsp" src="{% static 'images/hall.jpg' %}"/>
+                  </div>
+                   
+                
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">place</i>Tewa</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">whatshot</i>Red</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+  </ul>
+    </div>
+            
+    <div id="form2" class="tab-content">
+        
+        
+        Form2
+
+
+
+    </div>
+    <div id="form3" class="tab-content" >
+        Form 3
+
+    </div>  
+        
+    <div id="form4" class="tab-content" >
+        Form 4
+
+    </div>    
+            
+
+</div>
+
+
+
+        
+
+    </div>
+</div>
+<script>
+    $('document').ready(function(){
+       
+        $("#t_cls").addClass("active")
+        console.log("done") 
+    })
+</script>
+{% endblock info%}

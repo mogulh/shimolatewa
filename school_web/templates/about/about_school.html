@@ -1,0 +1,111 @@
+{% extends 'about/about.html' %}
+{% load static %}
+
+{% block info %}
+
+<div class="section">
+    <div class="row tabs-vertical"  id="top" >
+        <div id="left_menu" class="col s12 m2 side">
+            <ul class='tabs'>
+                <li class='tab' id='tag_info_outline'>
+                <a href='#general' class='active'> 
+                    general
+                </a>
+            </li>
+                    
+            <li class='tab' id='tag_list'>
+                <a href='#list' >  
+                   results
+                
+                </a>
+            </li>
+            <li class='tab' id='tag_color'>
+                <a href='#setting' >
+                    location
+                    
+                </a>
+            </li>
+
+            <li class='tab' id='tag_search'>
+                <a href='#search'> 
+                    history
+                    
+                </a>
+            </li>
+                    
+        </ul> 
+    </div>
+
+
+
+        <div id="right_content"  class="col s12 m10" style="height:100%;">    
+
+                    <div id="general" class="tab-content white center" >
+                   <h4>School Motto</h4>
+                   <p>Ujuzi na utumishi</p>
+                    
+                    </div>
+                    
+                    <div id="list" class="tab-content">
+                        
+                    <ul class="collection">
+                        <li class="collection-item"> original from <br> 
+                    https://github.com/Dogfalo/materialize/issues/2542 
+                    </li>
+                        <li class="collection-item"> original from <br> 
+                    https://github.com/Dogfalo/materialize/issues/2542 
+                    </li>
+                    </ul>
+
+
+
+
+                    </div>
+                
+                    <div id="setting" class="tab-content" >
+
+
+
+
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                        <span class="card-title">Card Title</span>
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                        <a href="#">This is a link</a>
+                        <a href="#">This is a link</a>
+                        </div>
+                    </div>
+
+
+
+
+
+                    </div>    
+                    
+                    
+                    <div id="search" class="tab-content">
+                    xxxxxxxxx<br>
+                        xxxxxxxxx<br>
+                        xxxxxxxxx<br>
+                    </div> 
+
+
+        </div>
+
+
+
+        
+
+    </div>
+</div>
+<script>
+    $('document').ready(function(){
+       
+        $("#t_sch").addClass("active")
+        console.log("done") 
+    })
+</script>
+{% endblock info%}

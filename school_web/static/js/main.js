@@ -6,4 +6,10 @@ $('document').ready(function() {
     });
     window.setInterval(function() { $('.carousel').carousel('next') }, 3000)
     $('.tabs').tabs();
+    $(document).ready(function() {
+        $('.sidenav').sidenav();
+    });
+    $(document).ready(function() {
+        $('.collapsible').collapsible();
+    });
 });
